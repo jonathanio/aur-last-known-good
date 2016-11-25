@@ -1,5 +1,5 @@
 pkgname=last-known-good
-pkgver=1.0.0-rc1
+pkgver=1.0.0+rc1
 pkgrel=1
 pkgdesc="Backup the Last Known Good kernel on successful boots."
 arch=("any")
