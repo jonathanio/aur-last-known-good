@@ -1,0 +1,9 @@
+[Unit]
+Description=Backup Last Known Good kernel on successful boot
+
+[Service]
+Type=OneShot
+ExecStart=/usr/bin/last-known-good
+
+[Install]
+WantedBy=multi-user.target

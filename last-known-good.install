@@ -1,0 +1,15 @@
+note() {
+    printf "* NOTE:${bold} $1${all_off}\n"
+}
+
+all_off="$(tput sgr0)"
+bold="${all_off}$(tput bold)"
+
+post_install() {
+    note "Do not forget to update your grub or bootctl configuration"
+    note "to add the kernel. See 'man 8 last-known-good' for further details."
+}
+
+post_upgrade() {
+    post_install
+}
