@@ -2,7 +2,7 @@
 Description=Backup Last Known Good kernel on successful boot
 
 [Service]
-Type=OneShot
+Type=oneshot
 ExecStart=/usr/bin/last-known-good
 
 [Install]
